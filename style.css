@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap');
 
+
 *{
     padding: 0;
     margin: 0;
@@ -24,8 +25,9 @@ body{
 }
 
 nav{
+    position: relative;
     max-width: 1200px;
-    margin: auto;
+    margin: 0.8rem;
     padding: 1rem 1rem;
     display: flex;
     align-items: center;
@@ -38,6 +40,7 @@ nav{
 }
 
 .nav-links{
+    font-weight: bold;
     list-style: none;
     display: flex;
     align-items: center;
@@ -49,6 +52,7 @@ nav{
     position: relative;
     padding-bottom: 0.75rem;
     color: #fff;
+    list-style: none
 }
 
 .link a::after{
@@ -58,7 +62,7 @@ nav{
     width: 0;
     bottom: 0;
     left: 0;
-    background-color: #1d4ed8;
+    background-color: #d8391d;
     transition: all 0.3s ease;
 }
 
@@ -66,6 +70,27 @@ nav{
     width: 70%;
 }
 
+.content a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+    list-style: none
+}
+
+.content a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #d8391d;
+    transition: all 0.3s ease;
+}
+
+.content a:hover::after{
+    width: 70%;
+}
 .btn{
     padding: 1rem 2rem;
     font-size: 1rem;
@@ -93,7 +118,6 @@ nav{
 }
 
 header{
-    background-image: url(img/background1.jpg);
     position: relative;
     padding-top: 2rem;
     display: flex;
@@ -104,13 +128,13 @@ header{
 
 header .content h4{
     margin-bottom: 1rem;
-    color: #ccc;
+    color: #ffe2c8;
     font-size: 1rem;
     font-weight: 600;
 }
 
 header .content h1{
-    color: #fff;
+    color: #ffe2c8;
     margin-bottom: 1rem;
     font-size: 3rem;
     font-weight: 700;
@@ -119,21 +143,16 @@ header .content h1{
 
 header .content h1 span{
     font-family: 'Dancing Script', cursive;
-    font-size: 5rem;
-    color: #fff;
-    text-shadow:
-      0 0 7px #fff,
-      0 0 10px #fff,
-      0 0 42px #d8771d,
-      0 0 82px #d8771d,
-      0 0 92px #d8771d,
-      0 0 10px #d8771d,
-      0 0 131px #d8771d;
+    font-size: 6rem;
+    color: #ffe2c8;
+    text-shadow: 
+    0 0 10px #d8771d;
 }
 
 header .content p{
     margin-bottom: 2rem;
-    color: #ccc;
+    font-size: 1.3rem;
+    color: #ffe2c8;
 }
 
 header .image{
@@ -298,11 +317,14 @@ footer{
 }
 
 footer .column .logo{
+    display: flex;
+    justify-content: center;
     max-width: 100px;
     margin-bottom: 2rem;
 }
 
 footer .column p{
+    font-size: 0.8rem;
     color: #ccc;
     margin-bottom: 2rem;
 }
