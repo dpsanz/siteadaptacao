@@ -8,7 +8,7 @@
     margin: 0;
     outline: none;
     border: none;
-    box-sizing: border-box;
+    
 }
 
 img{
@@ -89,7 +89,14 @@ nav{
     transition: all 0.3s ease;
 }
 
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem 1rem;
+}
+
 .btn{
+    font-family: "Young Serif" serif;
     padding: 1rem 2rem;
     font-size: 1rem;
     color: #fff;
@@ -100,21 +107,15 @@ nav{
 }
 
 .btn:hover{
+    font-family: "Young Serif" serif;
     background-color: #d8771d;
-}
-
-.container{
-    max-width: 1200px;
-    margin: auto;
-    padding: 2rem 2rem;
 }
 
 #pizzas {
     background-image: url(img/background1.jpg);;
-    background-repeat: no-repeat;
     background-size: contain;
     backdrop-filter: blur(5px);
-    border-radius: 100px;
+    border-radius: 40px;
     
 }
 
@@ -153,7 +154,7 @@ header .content h1 span{
     font-size: 6rem;
     color: #ffe2c8;
     text-shadow: 
-    0 0 10px #d8771d;
+    0 0 10px #000000;
 }
 
 #pizzas h2 span{
@@ -208,7 +209,7 @@ section .header{
 }
 
 .pricing .card{
-    padding: 3rem 2rem;
+    padding: 2rem 2rem;
     display: flex;
     flex-direction: column;
     border: 2px solid transparent;
@@ -217,11 +218,11 @@ section .header{
     background: transparent;
     border: 2px solid #ffffff;
     border-radius: 20px;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(10px);
 }
 
 .pricing .card:hover{
-    background-color: #a35002;
+    background-color: #7e4612;
     border-color: #ffffff; 
     font-family: "Young Serif" serif;
 }
